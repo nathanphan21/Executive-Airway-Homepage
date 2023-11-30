@@ -20,47 +20,35 @@
     />
   </div>
 
-  <button class="btn">Log In</button>
+  <button class="btn" id="loginBtn">Log In</button>
 
   <p>Don't have an account? <a href="#">Sign Up</a></p>
 </div>
 
-<body>
+<div class="singup-container">
+  <h2>Sign up</h2>
 
-  <div class="singup-container">
-    <h2>Sign up</h2>
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your first and last name"
-      />
-    </div>
-
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        placeholder="Enter your username"
-      />
-    </div>
-
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Enter your password"
-      />
-    </div>
-
-    <button class="btn">Sign Up</button>
-
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input
+      type="text"
+      id="signupUsr"
+      name="username"
+      placeholder="Enter your username"
+    />
   </div>
-  <script src="/js/login.js"></script>
-</body>
+
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="signupPwd"
+      name="password"
+      placeholder="Enter your password"
+    />
+  </div>
+
+  <button class="btn" id="signupBtn">Sign Up</button>
+
+</div>
+<script type="application/javascript" src="/js/login.js"></script>
