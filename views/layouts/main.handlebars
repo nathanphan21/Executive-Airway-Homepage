@@ -3,19 +3,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Executive Airline Homepage</title>
-    <link rel="stylesheet" href="/css/style.css" />
-
+    {{! <link rel="stylesheet" href="/css/style.css" /> }}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
   </head>
   <body>
     <nav>
+      <ul>
+        <li><strong>Executive Airways</strong></li>
+      </ul>
       <!-- Conditionally render login or logout links -->
-      {{#if logged_in}}
-        <a href="/Menu">Menu</a>
-        |
-        <button class="no-button" id="logout">logout</button>
-      {{else}}
-        <a href="/login">login</a>
-      {{/if}}
+      <u1>
+        <li><a href="/Menu">Menu</a></li>
+        {{#if logged_in}}
+
+          <li><a href="#" role="button" id="logout">logout</a></li>
+        {{else}}
+          <li><a href="/login" role="button">login</a></li>
+        {{/if}}
+      </u1>
+
     </nav>
     {{{body}}}
   </body>

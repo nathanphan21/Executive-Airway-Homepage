@@ -4,7 +4,7 @@ const Benefit = require("../models/benefit");
 
 router.get("/", (req, res) => {
   try {
-    res.render("main");
+    res.render("login");
   } catch (err) {
     res.status(400).json(err);
   }
