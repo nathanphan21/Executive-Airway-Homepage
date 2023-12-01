@@ -7,7 +7,16 @@
 
   </head>
   <body>
-
+    <nav>
+      <!-- Conditionally render login or logout links -->
+      {{#if logged_in}}
+        <a href="/Menu">Menu</a>
+        |
+        <button class="no-button" id="logout">logout</button>
+      {{else}}
+        <a href="/login">login</a>
+      {{/if}}
+    </nav>
     {{{body}}}
   </body>
 

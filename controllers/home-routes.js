@@ -1,5 +1,7 @@
 const router = require("express").Router();
 
+const Benefit = require("../models/benefit");
+
 router.get("/", (req, res) => {
   try {
     res.render("main");
@@ -14,6 +16,14 @@ router.get("/login", (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+router.get("/menu", async (req, res) => {
+  try {
+    const menuData = await Benefit.findAll();
+
+    const menu = menuData.map();
+  } catch (err) {}
 });
 
 module.exports = router;
