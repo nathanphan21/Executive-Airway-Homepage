@@ -1,54 +1,65 @@
-<div class="login-container">
-  <h2>Login</h2>
-  <div class="form-group">
-    <label for="username">Username:</label>
-    <input
-      type="text"
-      id="username"
-      name="username"
-      placeholder="Enter your username"
-    />
-  </div>
+<div class="grid">
+  <article>
+    <header>
+      <h2><abbr>Login</abbr></h2>
+    </header>
 
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="Enter your password"
-    />
-  </div>
+    <form>
+      <div class="grid">
+        <label for="username">Username:
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+          />
+        </label>
+      </div>
 
-  <button class="btn" id="loginBtn">Log In</button>
+      <div class="grid">
+        <label for="password">Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+        </label>
+      </div>
+      <button class="btn" id="loginBtn">Log In</button>
 
-  <p>Don't have an account? <a href="#">Sign Up</a></p>
-</div>
+    </form>
 
-<div class="singup-container">
-  <h2>Sign up</h2>
+  </article>
 
-  <div class="form-group">
-    <label for="username">Username:</label>
-    <input
-      type="text"
-      id="signupUsr"
-      name="username"
-      placeholder="Enter your username"
-    />
-  </div>
+  <article>
+    <header>
+      <h2>Sign up</h2>
+    </header>
 
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input
-      type="password"
-      id="signupPwd"
-      name="password"
-      placeholder="Enter your password"
-    />
-  </div>
-
-  <button class="btn" id="signupBtn">Sign Up</button>
-
+    <form>
+      <div class="grid">
+        <label for="username">Username:
+          <input
+            type="text"
+            id="signupUsr"
+            name="username"
+            placeholder="Enter your username"
+          />
+        </label>
+      </div>
+      <div class="grid">
+        <label for="password">Password:
+          <input
+            type="password"
+            id="signupPwd"
+            name="password"
+            placeholder="Enter your password"
+          />
+        </label>
+      </div>
+      <button class="btn" id="signupBtn">Sign Up</button>
+    </form>
+  </article>
 </div>
 <script type="application/javascript" src="/js/login.js"></script>
