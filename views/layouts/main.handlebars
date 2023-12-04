@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Executive Airline Homepage</title>
-    {{! <link rel="stylesheet" href="/css/style.css" /> }}
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -17,6 +17,9 @@
         </ul>
         <!-- Conditionally render login or logout links -->
         <u1>
+          {{!-- {{#if home === true}}
+          <li><a href="/homepage">Home</a></li>
+          {{/if}} --}}
           <li><a href="/Menu">Menu</a></li>
           {{#if logged_in}}
 
@@ -29,7 +32,7 @@
       </nav>
       {{{body}}}
     </div>
-
+    <script type="application/javascript" src="/js/logout.js"></script>
   </body>
 
 </html>
