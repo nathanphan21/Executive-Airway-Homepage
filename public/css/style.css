@@ -81,7 +81,9 @@
     center center fixed;
   background-size: cover;
 }
-
+.menu-text {
+  text-align: center;
+}
 .homepage-gradient {
   position: absolute;
   /* width: 100%;
@@ -98,4 +100,9 @@
     rgba(17, 25, 31, 0.5) 60%,
     rgba(17, 25, 31, 0) 100%
   );
+}
+img {
+  height: 350px;
+  width: 350px;
+  margin-left: 40px;
 }
