@@ -18,7 +18,9 @@ const loginFormHandler = async (event) => {
       document.location.replace("/");
       // alert(`${username} logged in!`);
     } else {
-      alert(response.statusText);
+      console.log("DIDNT WORK");
+
+      showModal();
     }
   }
   console.log("-----> CLICKED!");
@@ -42,13 +44,19 @@ const signupFormHandler = async (event) => {
       document.location.replace("/");
       // alert(`Welcome new user ${username}!`);
     } else {
-      alert(response.statusText);
+      showModal();
     }
   }
 };
-
+const showModal = () => {
+  const modal = document.querySelector("#modal");
+  modal.setAttribute("open", "true");
+};
 const loginBtn = document.querySelector("#loginBtn");
 loginBtn.addEventListener("click", loginFormHandler);
 
 const signupBtn = document.querySelector("#signupBtn");
 signupBtn.addEventListener("click", signupFormHandler);
+
+// const modalConfirm = document.querySelector("#confirmBtn");
+// modalConfirm.addEventListener("click", document.location.replace("/login"));

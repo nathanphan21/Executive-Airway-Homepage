@@ -23,11 +23,11 @@ router.get("/login", (req, res) => {
 
 router.get("/menu", async (req, res) => {
   try {
-    const menuData = await Benefit.findAll();
+    // const menuData = await Benefit.findAll();
 
-    const menu = menuData.map((menuItem) => menuItem.get({ plain: true }));
+    // const menu = menuData.map((menuItem) => menuItem.get({ plain: true }));
 
-    res.render("menu", { logged_in: req.session.logged_in, menu });
+    res.render("menu", { logged_in: req.session.logged_in });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
