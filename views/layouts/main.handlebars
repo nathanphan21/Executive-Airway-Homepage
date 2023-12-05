@@ -17,9 +17,11 @@
         </ul>
         <!-- Conditionally render login or logout links -->
         <u1>
-          {{!-- {{#if home === true}}
-          <li><a href="/homepage">Home</a></li>
-          {{/if}} --}}
+          {{#if home}}
+            <li></li>
+          {{else}}
+            <li><a href="/">Home</a></li>
+          {{/if}}
           <li><a href="/Menu">Menu</a></li>
           {{#if logged_in}}
 
