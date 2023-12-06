@@ -27,7 +27,7 @@ router.get("/menu", async (req, res) => {
 
     // const menu = menuData.map((menuItem) => menuItem.get({ plain: true }));
 
-    res.render("menu", { logged_in: req.session.logged_in });
+    res.render("menu", { logged_in: req.session.logged_in, onMenu: true });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

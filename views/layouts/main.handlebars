@@ -10,6 +10,7 @@
     />
   </head>
   <body>
+
     <div class="containter">
       <nav>
         <ul>
@@ -32,6 +33,13 @@
         </u1>
 
       </nav>
+      {{#if onMenu}}
+        <div class="menu-hero">
+          {{! <h1 class="menu-hero-text">Standard Lounge Menu</h1> }}
+          <div class="menu-hero-gradient"></div>
+
+        </div>
+      {{/if}}
       {{{body}}}
     </div>
     <script type="application/javascript" src="/js/logout.js"></script>

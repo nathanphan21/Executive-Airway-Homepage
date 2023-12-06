@@ -101,18 +101,62 @@
     rgba(17, 25, 31, 0) 100%
   );
 }
-img {
+/* img {
   height: 350px;
   width: 350px;
   margin-left: 40px;
-}
-#menu-page {
-  /* height: 237%; */
+} */
+/* #menu-page { */
+/* height: 237%; */
+/* margin: 0;
+  padding: 0;
+  background: url("https://wallpaperaccess.com/full/3410872.jpg") center center; */
+/* background-attachment: local; */
+/* background-size: cover;
+  font-family: Arial, sans-serif; Adding a common font for better cross-browser compatibility */
+/* } */
+.menu-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
   background: url("https://wallpaperaccess.com/full/3410872.jpg") no-repeat
-    center center;
-  /* background-attachment: local; */
+    center center fixed;
   background-size: cover;
-  font-family: Arial, sans-serif; /* Adding a common font for better cross-browser compatibility */
+}
+.menu-hero-text {
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  /* padding-top: 45vh; */
+}
+
+.menu-hero-gradient {
+  position: absolute;
+  /* width: 100%;
+    height: 100%; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgb(17, 25, 31);
+  background: linear-gradient(
+    360deg,
+    rgba(17, 25, 31, 1) 0%,
+    rgba(17, 25, 31, 0.5) 60%,
+    rgba(17, 25, 31, 0) 100%
+  );
+}
+#menu-position {
+  position: relative;
+  top: -500px;
+}
+#menu-position img {
+  width: 50%;
 }
