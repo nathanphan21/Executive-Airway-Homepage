@@ -14,22 +14,16 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
       document.location.replace("/");
-      // alert(`${username} logged in!`);
     } else {
-      console.log("DIDNT WORK");
-
-      showModal();
+      showLoginModal();
     }
   }
-  console.log("-----> CLICKED!");
 };
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-  //we could have a name section
-  // const name = document.querySelector('#name-signup').value.trim();
+
   const username = document.querySelector("#signupUsr").value.trim();
   const password = document.querySelector("#signupPwd").value.trim();
 
@@ -42,21 +36,21 @@ const signupFormHandler = async (event) => {
 
     if (response.ok) {
       document.location.replace("/");
-      // alert(`Welcome new user ${username}!`);
     } else {
-      showModal();
+      showSignupModal();
     }
   }
 };
-const showModal = () => {
-  const modal = document.querySelector("#modal");
-  modal.setAttribute("open", "true");
+const showLoginModal = () => {
+  const loginModal = document.querySelector("#login-modal");
+  loginModal.setAttribute("open", "true");
+};
+const showSignupModal = () => {
+  const signupModal = document.querySelector("#signup-modal");
+  signupModal.setAttribute("open", "true");
 };
 const loginBtn = document.querySelector("#loginBtn");
 loginBtn.addEventListener("click", loginFormHandler);
 
 const signupBtn = document.querySelector("#signupBtn");
 signupBtn.addEventListener("click", signupFormHandler);
-
-// const modalConfirm = document.querySelector("#confirmBtn");
-// modalConfirm.addEventListener("click", document.location.replace("/login"));

@@ -33,13 +33,13 @@
         </u1>
 
       </nav>
-      {{#if onMenu}}
+      {{#unless home}}
         <div class="menu-hero">
           {{! <h1 class="menu-hero-text">Standard Lounge Menu</h1> }}
           <div class="menu-hero-gradient"></div>
 
         </div>
-      {{/if}}
+      {{/unless}}
       {{{body}}}
     </div>
     <script type="application/javascript" src="/js/logout.js"></script>
