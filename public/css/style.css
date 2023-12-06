@@ -106,3 +106,13 @@ img {
   width: 350px;
   margin-left: 40px;
 }
+#menu-page {
+  /* height: 237%; */
+  margin: 0;
+  padding: 0;
+  background: url("https://wallpaperaccess.com/full/3410872.jpg") no-repeat
+    center center;
+  /* background-attachment: local; */
+  background-size: cover;
+  font-family: Arial, sans-serif; /* Adding a common font for better cross-browser compatibility */
+}
