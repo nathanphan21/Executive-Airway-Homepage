@@ -75,11 +75,22 @@
   position: relative;
   top: -500px;
 }
+#menu-position article {
+  padding: 20px;
+}
 #menu-position img {
+  display: block;
   width: 50%;
+  height: 100%;
 }
 
 #login-position {
   position: relative;
   top: -400px;
+}
+.menu-img {
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }

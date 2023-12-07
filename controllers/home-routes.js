@@ -1,7 +1,5 @@
 const router = require("express").Router();
 
-const Benefit = require("../models/benefit");
-
 router.get("/", (req, res) => {
   try {
     res.render("homepage", {
