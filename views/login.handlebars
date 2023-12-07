@@ -1,8 +1,18 @@
-<div class="grid">
-  <dialog id="modal" open="false">
+<div class="grid" id="login-position">
+  <dialog id="login-modal" open="false">
     <article>
       <h3>Username or password not found!</h3>
       <p>Please double check your username and password and try again.</p>
+      <footer>
+        <a href="/login" role="button">Confirm</a>
+      </footer>
+    </article>
+  </dialog>
+  <dialog id="signup-modal" open="false">
+    <article>
+      <h3>There was an error in making your account!</h3>
+      <p>Please make sure your password is at least 8 characters long and try
+        again.</p>
       <footer>
         <a href="/login" role="button">Confirm</a>
       </footer>

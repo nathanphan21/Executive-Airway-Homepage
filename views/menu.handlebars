@@ -1,131 +1,213 @@
-<div class="homepage menu-text">
-<article class="container">
+<div class="menu-text" id="menu-position">
+  <article class="container">
     <h1>
-        Standard Lounge Menu
+      Standard Lounge Menu
     </h1>
     <details open>
-        <summary >
-            This showcases our complementary beverage/food throughout the week which in included with our standard membership
+      <summary>
+        Our complementary food/beverage options included with our standard
+        membership
+      </summary>
+      <details>
+        <summary>
+          Monday
+        </summary>
+        <p>Hotdog and Budlight</p>
+        <div class="grid">
+          <div
+            class="menu-img"
+            style="background-image:url(/img/hotdog1.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/betterbudlight.jpeg)"
+          ></div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          Tuesday
+        </summary>
+        <p>Sliders and Corona</p>
+        <div class="grid">
+          <div
+            class="menu-img"
+            style="background-image:url(/img/sliders.jpeg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/corona.jpeg)"
+          ></div>
+
+        </div>
+      </details>
+      <details>
+        <summary>
+          Wednesday
+        </summary>
+        <p>Ceasar Salad and Lacroix</p>
+        <div class="grid">
+          <div
+            class="menu-img"
+            style="background-image:url(/img/salad.jpeg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/lacroix.jpeg)"
+          ></div>
+
+        </div>
+      </details>
+      <details>
+        <summary>
+          Thursday
+        </summary>
+        <p>Red Sauce Spaghetti and Lemonade</p>
+        <div class="grid">
+          <div
+            class="menu-img"
+            style="background-image:url(/img/spagetti.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/lemonade.jpg)"
+          ></div>
+
+        </div>
+      </details>
+      <details>
+        <summary>
+          Friday
+        </summary>
+        <p>Turkey Club and Coconut Water</p>
+        <div class="grid">
+            <div class="grid">
+          <div
+            class="menu-img"
+            style="background-image:url(/img/turkey.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/cocowater.jpeg)"
+          ></div>
+         
+        </div>
+
+      </details>
+      <p>For more options, become a Platinum Member!</p>
+    </details>
+    *** Our menu changes on a weekly basis
+
+  </article>
+
+  <article class="container">
+    <h1>
+      Platinum Member Lounge Menu
+    </h1>
+    {{#if logged_in}}
+      <details open>
+        <summary>
+          Our exclusive food/beverage options included within our "Platinum"
+          Membership
         </summary>
         <details>
-            <summary>
-                Monday
-            </summary>
-            <p>Hotdog and Budlight</p>
-            <div class="grid">
-            <img src="/img/hotdog1.jpg" alt="Glizzy">
-            <img src="/img/betterbudlight.jpeg" alt="">
+          <summary>
+            Monday
+          </summary>
+          <p>Chicken Pesto Sandwhich and Lucy Juicy IPA</p>
+          <div class="grid">
+             <div
+            class="menu-img"
+            style="background-image:url(/img/chickenpesto.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/lucy.jpg)"
+          ></div>
+           
           </div>
         </details>
         <details>
-            <summary>
-                Tuesday
-            </summary>
-            <p>Sliders and Corona</p>
-            <div class="grid">
-                <img src="/img/sliders.jpeg" alt="Glizzy">
-                <img src="/img/corona.jpeg" alt="">
-        </details>
-        <details>
-            <summary>
-                Wednesday
-            </summary>
-            <p>Ceasar Salad and Lacroix</p>
-            <div class="grid">
-                <img src="/img/salad.jpeg" alt="Glizzy">
-                <img src="/img/lacroix.jpeg" alt="">
-        </details>
-        <details>
-            <summary>
-                Thursday
-            </summary>
-            <p>Red Sauce Spaghetti and Lemonade</p>
-            <div class="grid">
-                <img src="/img/spagetti.jpg" alt="Glizzy">
-                <img src="/img/lemonade.jpg" alt="">
-        </details>
-        <details>
-            <summary>
-                Friday
-            </summary>
-            <p>Turkey Club and Coconut Water</p>
-            <div class="grid">
-                <img src="/img/turkey.jpg" alt="Glizzy">
-                <img src="/img/cocowater.jpeg" alt="">
-        </details>
-        <p>For more options, become an Exeucutive Member!</p> 
-    </details>
-    *** Our menu changes on a weekly basis
-  
-</article>
-
-<article class="container">
-<h1>
-    Executive Longue Menu
-</h1>
-{{#if logged_in}}
-<details open>
-    <summary >
-        Our executive food items included within our "Executive" Membership
-    </summary>
-    <details>
-        <summary>
-            Monday
-        </summary>
-        <p>Chicken Pesto Sandwhich and Lucy Juicy IPA</p>
-        <div class="grid">
-            <img src="/public/img/chickenpesto.jpg" alt="Glizzy">
-            <img src="/public/img/lucy.jpg" alt="">
-      </div>
-    </details>
-    <details>
-        <summary>
+          <summary>
             Tuesday
-        </summary>
-        <p>Porkchop/Mash potato and Guinness</p>
-        <div class="grid">
-            <img src="/public/img/chopandtato.jpg" alt="Glizzy">
-            <img src="/public/img/guinness.jpg" alt="">
-    </details>
-    <details>
-        <summary>
+          </summary>
+          <p>Porkchop/Mash potato and Guinness</p>
+          <div class="grid">
+              <div
+            class="menu-img"
+            style="background-image:url(/img/chopandtato.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/guinness.jpg)"
+          ></div>
+          
+          </div>
+        </details>
+        <details>
+          <summary>
             Wednesday
-        </summary>
-        <p>Steak Salad and Chardonnay</p>
-        <div class="grid">
-            <img src="/public/img/steaksalad.jpeg" alt="Glizzy">
-            <img src="/public/img/chard.jpg" alt="">
-    </details>
-    <details>
-        <summary>
+          </summary>
+          <p>Steak Salad and Chardonnay</p>
+          <div class="grid">
+               <div
+            class="menu-img"
+            style="background-image:url(/img/steaksalad.jpeg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/chard.jpg)"
+          ></div>
+            
+          </div>
+        </details>
+        <details>
+          <summary>
             Thursday
-        </summary>
-        <p>Chicken Carbonara and Cabernet Sauvignon</p>
-        <div class="grid">
-            <img src="/public/img/carbonara.jpg" alt="Glizzy">
-            <img src="/public/img/cab.jpg" alt="">
-    </details>
-    <details>
-        <summary>
+          </summary>
+          <p>Chicken Carbonara and Cabernet Sauvignon</p>
+          <div class="grid">
+                    <div
+            class="menu-img"
+            style="background-image:url(/img/carbonara.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/cab.jpg)"
+          ></div>
+           
+          </div>
+        </details>
+        <details>
+          <summary>
             Friday
-        </summary>
-        <p>American Wagyu and choice of Cocktail</p>
-        <div class="grid">
-            <img src="/public/img/steak.jpg" alt="Glizzy">
-            <img src="/public/img/cocktail.jpg" alt="">
-    </details>
-    
+          </summary>
+          <p>American Wagyu and choice of Cocktail</p>
+          <div class="grid">
+                           <div
+            class="menu-img"
+            style="background-image:url(/img/steak.jpg)"
+          ></div>
+          <div
+            class="menu-img"
+            style="background-image:url(/img/cocktail.jpg)"
+          ></div>
+            {{!-- <img src="/img/steak.jpg" alt="Glizzy" />
+            <img src="/img/cocktail.jpg" alt="" /> --}}
+          </div>
+        </details>
+
         ***Our Menu changes on a weekly basis
-  
-</details>
-{{else}}
-    <summary>
+
+      </details>
+    {{else}}
+      <summary>
         Please sign-up or login to view our executive items
-    </summary>
-<div class="grid">
-   <a href="/login" role="button"> Sign Up or login!</a>
-    
-</div>
-{{/if}}
-</article>
+      </summary>
+      <div class="grid">
+        <a href="/login" role="button"> Sign Up or login!</a>
+
+      </div>
+    {{/if}}
+  </article>
 </div>

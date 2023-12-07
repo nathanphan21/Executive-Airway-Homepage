@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Executive Airline Homepage</title>
+    <title>Executive Airways</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
@@ -10,6 +10,7 @@
     />
   </head>
   <body>
+
     <div class="containter">
       <nav>
         <ul>
@@ -32,6 +33,13 @@
         </u1>
 
       </nav>
+      {{#unless home}}
+        <div class="menu-hero">
+          {{! <h1 class="menu-hero-text">Standard Lounge Menu</h1> }}
+          <div class="menu-hero-gradient"></div>
+
+        </div>
+      {{/unless}}
       {{{body}}}
     </div>
     <script type="application/javascript" src="/js/logout.js"></script>
